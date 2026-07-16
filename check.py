@@ -1,7 +1,7 @@
 import os
 import sys
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import requests
 import cloudscraper
 
@@ -95,8 +95,17 @@ def fetch_and_parse_venues():
 
 def main():
     try:
-        now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"[{now_str}] Running check.py")
+        # Define IST timezone (UTC + 5:30)
+        ist_tz = timezone(timedelta(hours=5, minutes=30))
+        now_ist = datetime.now(ist_tz)
+        today_str = now_ist.strftime("%Y-%m-%d")
+        
+        # Check if past release date
+        if today_str > "2026-07-23":
+            print(f"[{now_ist.strftime('%Y-%m-%d %H:%M:%S')}] Past release date (2026-07-23), skipping check.")
+            sys.exit(0)
+            
+        print(f"[{now_ist.strftime('%Y-%m-%d %H:%M:%S')}] Running check.py")
         
         # 1. Fetch current venues
         current_venues = fetch_and_parse_venues()
