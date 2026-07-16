@@ -27,17 +27,7 @@ def send_notification(venue_name):
 
 def fetch_and_parse_venues():
     headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/145.0.0.0 Safari/537.36"
-        ),
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "en-US,en;q=0.9",
         "Referer": "https://in.bookmyshow.com/movies/chennai/buytickets/ET00430817/",
-        "sec-ch-ua": '"Chromium";v="145", "Not:A-Brand";v="99"',
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": '"macOS"',
         "x-app-code": "WEB",
         "x-region-code": "CHEN",
         "x-region-slug": "chennai",
