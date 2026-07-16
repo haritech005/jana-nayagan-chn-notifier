@@ -67,6 +67,7 @@ def fetch_and_parse_venues():
         resp = requests.get(API_URL, headers=headers, params=params, impersonate="chrome120", timeout=15)
         if resp.status_code != 200:
             print(f"HTTP Error: {resp.status_code}")
+            print(f"Response snippet: {resp.text[:500]}")
             return venues
             
         data = resp.json()
