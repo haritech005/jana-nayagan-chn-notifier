@@ -2,7 +2,7 @@ import os
 import sys
 import json
 from datetime import datetime
-import requests
+from curl_cffi import requests
 
 API_URL = "https://in.bookmyshow.com/api/movies-data/v4/showtimes-by-event/primary-dynamic"
 STATE_FILE = "state.json"
@@ -64,7 +64,7 @@ def fetch_and_parse_venues():
     venues = {}
     
     try:
-        resp = requests.get(API_URL, headers=headers, params=params, timeout=15)
+        resp = requests.get(API_URL, headers=headers, params=params, impersonate="chrome120", timeout=15)
         if resp.status_code != 200:
             print(f"HTTP Error: {resp.status_code}")
             return venues
