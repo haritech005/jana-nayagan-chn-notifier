@@ -27,6 +27,9 @@ def send_notification(venue_name):
 
 
 def fetch_and_parse_venues():
+    if os.getenv("FORCE_MOCK_VENUE", "false").lower() == "true":
+        print("FORCE_MOCK_VENUE is enabled. Injecting fake venue.")
+        return {"TEST001": "Test Cinema - Ignore This"}
     headers = {
         "Referer": "https://in.bookmyshow.com/movies/chennai/buytickets/ET00430817/",
         "x-app-code": "WEB",
