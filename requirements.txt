@@ -1,2 +1,2 @@
 requests>=2.0.0
-curl_cffi>=0.15.0
+cloudscraper>=1.2.71
