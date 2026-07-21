@@ -11,14 +11,14 @@
   "SLMP": "SLB (LakshmiBala) Movie Park 4K Dolby Atmos: Padi",
   "GCRP": "Green Cinemas 4K Atmos, PLF: Padi",
   "SUTC": "Gokulam Cinemas 4K Dolby Atmos: Poonamalle",
-  "LKOP": "Lathaa Cinemas A/C Atmos 2K 3D: Chengalpattu",
-  "RACM": "RAMDASS CINEMAS A/C DTS: Sunguvarchatram",
   "SSCC": "Sivasakthi Cinemas RGB 4K Laser: Padi",
-  "JTMV": "VVM Cinemas 3D 2K AC Dts, Ponneri: Chennai",
-  "MTLM": "Mani Talkies 2K RGB Laser ATMOS: Minjur",
+  "LKOP": "Lathaa Cinemas A/C Atmos 2K 3D: Chengalpattu",
   "KMRM": "Kumaran Theatre PROVA 4K DOLBY ATMOS: Madipakkam",
-  "WSTC": "Woodlands Theatre: Chennai",
+  "RACM": "RAMDASS CINEMAS A/C DTS: Sunguvarchatram",
+  "JTMV": "VVM Cinemas 3D 2K AC Dts, Ponneri: Chennai",
   "RDMP": "Shree Radha Movie Park 4K Dolby Atmos: Redhills",
+  "MTLM": "Mani Talkies 2K RGB Laser ATMOS: Minjur",
+  "WSTC": "Woodlands Theatre: Chennai",
   "SVWT": "Vigneshwara Theatre RGB Laser: Poonamallee",
   "VECT": "Vela Cinemas RGB 4KLaser DolbyAtmos: Thiruninravur",
   "MMPR": "MovieMax: PR Mall, Wall Tax Road, Chennai",
@@ -27,5 +27,6 @@
   "VRCP": "VR Cinemas RGB 4K LASER DOLBY ATMOS: Pattabiram",
   "AMTT": "Arul Muruga Theatre 4K: Thiruporur",
   "AVMT": "AVM Cinemas: Uthukkottai",
-  "HRSR": "Sri Hari Theatre Dolby Atmos: Pattabiram"
+  "HRSR": "Sri Hari Theatre Dolby Atmos: Pattabiram",
+  "MCSK": "Miraj Cinemas: Sekaran Mall, Perrumbakkam"
 }
